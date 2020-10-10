@@ -10,8 +10,7 @@ outputs:
     description: "Random number"
     value: ${{ steps.random-number-generator.outputs.random-id }}
 runs:
-  using: "docker"
-  image: "node12"
+  using: "node12"
   steps: 
     - run: echo Hello ${{ inputs.who-to-greet }}.
       shell: bash
